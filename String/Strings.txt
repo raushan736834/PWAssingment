@@ -1,0 +1,32 @@
+1.What is a String in Java?
+Ans:In Java, a String is a sequence of characters that represents text. It is one of the most commonly used data types in Java and is used to store and manipulate textual data such as names, messages, file contents, and more.
+
+2.Types of String in Java?
+Ans:In Java, there are primarily two types of strings:
+
+String Literal: A string literal is a sequence of characters enclosed in double quotes ("). When the Java compiler encounters a string literal in the source code, it creates a string object and stores it in the string pool. Subsequent occurrences of the same string literal in the code will refer to the same string object in the string pool, promoting memory efficiency.
+
+String Object: A string object is an instance of the String class created using the new keyword and the String class constructor. When a string object is created using this method, it is stored in the heap memory. Unlike string literals, each string object created using the new keyword represents a distinct object in memory, even if the content is the same.
+
+
+3.What is String constant pool?
+Ans:The String constant pool, also known as the string pool, is a special area of memory in the Java heap where string literals are stored. When the Java compiler encounters a string literal in the source code, it checks the string pool to see if an identical string already exists. If the string exists, the compiler does not create a new string object; instead, it reuses the existing object from the string pool. This process is known as string interning.
+
+4.What do you mean by mutable and immutable objects?
+Ans:Mutable and immutable are two different characteristics of objects in programming:
+
+Mutable Objects:
+Mutable objects are objects whose state (i.e., data or properties) can be modified after they are created.
+In other words, the contents of mutable objects can be changed, added, or removed without creating a new object.
+Examples of mutable objects in Java include arrays, collections (such as ArrayList, HashMap), and objects created using classes with mutable fields.
+Mutable objects are typically modified using setter methods or direct assignment to their fields.
+
+Immutable Objects:
+Immutable objects are objects whose state cannot be modified after they are created.
+Once an immutable object is created, its state remains constant throughout its lifetime.
+Immutable objects are often used in situations where thread safety, security, or simplicity is desired, as they eliminate the need for synchronization and can be safely shared among multiple threads.
+Examples of immutable objects in Java include String, Integer, Double, and other wrapper classes, as well as objects created using the final keyword and immutable classes such as LocalDate and LocalDateTime in the Java Date-Time API.
+Immutable objects are typically created using constructors and do not provide setter methods to modify their state. Any operation that appears to modify an immutable object actually returns a new object with the modified state, leaving the original object unchanged.
+
+5. Where exactly is the string constant pool located in the memory?
+Ans:In Java, the String constant pool, also known as the string pool, is located in the Java heap memory. 
