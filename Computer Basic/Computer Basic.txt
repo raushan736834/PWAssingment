@@ -1,0 +1,34 @@
+1. What is Computer?
+Ans:
+A computer is a programmable machine that processes data according to a set of instructions. It can perform various tasks quickly and accurately, ranging from simple calculations to complex operations like running software applications, browsing the internet, or controlling machinery in industrial settings. Computers consist of hardware components such as the central processing unit (CPU), memory, storage devices, input/output devices like keyboards and monitors, and networking components. These components work together to execute instructions, store and retrieve data, and communicate with users and other devices.
+
+
+2. What is Ram?
+Ans:
+RAM stands for Random Access Memory. It is a type of computer memory that is used to store data and program instructions that are currently being used or processed by the CPU. RAM is volatile memory, meaning that it requires power to maintain its stored data. When the computer is turned off, the data stored in RAM is lost.
+
+RAM is a crucial component in a computer system because it provides fast access to data that the CPU needs to perform tasks. Unlike storage devices such as hard drives or solid-state drives (SSDs), which store data for long-term use, RAM is much faster but has limited capacity and does not retain data when the power is turned off.
+
+When you run a program on your computer, it is loaded into RAM from storage, and the CPU accesses the data and instructions stored in RAM to execute the program. The more RAM your computer has, the more programs and data it can handle simultaneously without slowing down.
+
+3.where is data stored in Computer?
+Ans:Data in a computer is stored in various types of storage devices, each serving different purposes:
+
+Primary Storage (RAM): As mentioned earlier, data that is currently being used or processed by the CPU is stored in Random Access Memory (RAM). RAM provides fast access to data but is volatile, meaning it loses its contents when the computer is turned off.
+
+Secondary Storage (Hard Drives, SSDs, etc.): Secondary storage devices, such as hard disk drives (HDDs) and solid-state drives (SSDs), are used to store data for long-term use. These devices have much larger storage capacities compared to RAM and retain data even when the power is turned off. Data stored on secondary storage is accessed as needed and transferred to RAM for processing by the CPU.
+
+Cache Memory: Cache memory is a small amount of high-speed memory located within or close to the CPU. It stores frequently accessed data and instructions to speed up processing by reducing the need to access data from slower primary or secondary storage.
+
+Registers: Registers are small, high-speed storage locations within the CPU itself. They are used to store data temporarily during processing and hold instructions and intermediate results.
+
+4.What are Output Devices?
+Ans:Output devices are hardware components of a computer system that allow the computer to communicate information or results to the user or to other devices. These devices take processed data from the computer and present it in a human-readable or machine-understandable form. 
+
+5. What are Input Devices?
+Ans:
+Input devices are hardware components of a computer system that allow users to enter data, commands, and instructions into the computer for processing. These devices capture and convert various forms of input from users into digital signals that the computer can understand and process.
+
+
+6.Which language is directly understood by the computer without a translation program?
+Ans:The language directly understood by the computer without the need for translation is called machine language or machine code. Machine language consists of binary code, which is a series of 0s and 1s representing instructions and data that the computer's central processing unit (CPU) can execute directly.

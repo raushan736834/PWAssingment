@@ -1,0 +1,59 @@
+1. What is Programming language?
+Ans:A programming language is a formal language comprising a set of instructions that produce various kinds of output. These instructions are used to communicate with a computer and to create software applications, scripts, or algorithms. Programming languages allow programmers to write code that defines the behavior of a computer program, specifying the steps to be executed and the data to be manipulated.
+
+2. Why do we need a programming language?
+Ans: We need programming languages for several reasons:
+
+Communication with Computers: Computers operate on machine code, which consists of binary instructions (0s and 1s). Programming languages provide a way for humans to communicate instructions to computers in a more readable and understandable form. Instead of dealing directly with binary code, programmers can use programming languages to write code that defines the behavior of a computer program.
+
+Software Development: Programming languages are essential for developing software applications, ranging from simple scripts to complex systems. By using programming languages, developers can write code to create applications that perform specific tasks, solve problems, or provide services to users.
+
+Problem Solving: Programming languages enable individuals to solve a wide range of problems using computers. By writing algorithms and implementing them in code, programmers can automate tasks, process data, manipulate information, and perform complex calculations.
+
+Automation: Programming languages allow for the automation of repetitive tasks and processes. By writing scripts or programs, individuals can automate tasks such as data processing, file manipulation, system administration, and more, saving time and effort.
+
+Customization: Programming languages enable customization and tailoring of software to specific needs and requirements. Developers can write code to customize existing software applications, create plugins or extensions, or build entirely new applications tailored to specific use cases.
+
+Innovation: Programming languages drive innovation by enabling the creation of new technologies, applications, and services. By providing tools and frameworks for software development, programming languages empower developers to push the boundaries of what is possible with computers and technology.
+
+3. What are the features of java?
+Ans:Java is a widely-used, high-level programming language known for its versatility, platform independence, and robustness. Here are some key features of Java:
+
+Platform Independence: One of the most significant features of Java is its platform independence. Java programs can run on any device that has a Java Virtual Machine (JVM) installed, regardless of the underlying hardware or operating system. This is achieved through the "Write Once, Run Anywhere" (WORA) principle, where Java code is compiled into bytecode, which can be executed on any device with a compatible JVM.
+
+Object-Oriented: Java is an object-oriented programming language, which means it supports the principles of encapsulation, inheritance, and polymorphism. Object-oriented programming (OOP) allows for modular and reusable code, making it easier to manage and maintain large-scale software projects.
+
+Simple and Easy to Learn: Java was designed to be simple, readable, and easy to learn, especially for programmers familiar with C or C++. It has a clean syntax and a large standard library, which reduces the need for writing complex code from scratch.
+
+Robust and Secure: Java was built with a strong emphasis on reliability, robustness, and security. It includes features such as automatic memory management (garbage collection), exception handling, and strong type checking, which help prevent errors and ensure the stability of Java applications. Additionally, Java's security features, such as sandboxing and bytecode verification, make it a popular choice for building secure applications, especially in web and enterprise environments.
+
+Rich Standard Library: Java comes with a vast standard library (Java API) that provides a wide range of pre-built classes and packages for common programming tasks, such as input/output operations, networking, database connectivity, GUI development, and more. This rich set of libraries simplifies development and accelerates the creation of Java applications.
+
+High Performance: While Java is often associated with platform independence and ease of use, it also offers high performance when properly optimized. Java's Just-In-Time (JIT) compiler dynamically compiles bytecode into native machine code at runtime, improving the execution speed of Java applications.
+
+Multithreading Support: Java provides built-in support for multithreading, allowing developers to create concurrent and parallel applications easily. Multithreading enables programs to perform multiple tasks simultaneously, improving performance and responsiveness in applications that require concurrent execution.
+
+Community and Ecosystem: Java has a large and active developer community, as well as a vast ecosystem of tools, frameworks, and libraries that support various aspects of Java development. This thriving ecosystem contributes to the popularity and longevity of Java as a programming language.
+
+4.What is an object?
+Ans:
+In programming, an object is a fundamental concept used to represent a real-world entity, such as a person, a car, a bank account, or any other tangible or intangible item. Objects are instances of classes, which serve as blueprints or templates for creating objects.
+
+5. What is class?
+Ans: 
+In programming, a class is a blueprint or template for creating objects. It serves as a blueprint because it defines the attributes (properties) and behaviors (methods) that objects of that class will have. Think of a class as a cookie cutter and objects as the cookies that are created using that cutter.
+
+6.Explain about the main() method in java?
+Ans:In Java, the main() method is a special method that serves as the entry point for a Java application. When you run a Java program, the Java Virtual Machine (JVM) starts executing the program by looking for the main() method in the specified class, and then it invokes the main() method to begin execution of the program.
+
+Here are some key points about the main() method in Java:
+
+Signature: The main() method has a specific signature that must be followed for it to serve as the entry point of a Java application. It must be declared as public, static, and void, and it must accept an array of strings (String[] args) as its parameter. The args parameter allows command-line arguments to be passed to the Java program when it is executed.
+
+Public: The main() method must be declared as public so that it can be accessed by the JVM when launching the Java application.
+
+Static: The main() method must be declared as static because it is called by the JVM before any objects of the class are created. This means that the main() method belongs to the class itself rather than to any specific instance of the class.
+
+Void: The main() method does not return any value, so its return type is specified as void.
+
+String[] args: The main() method accepts a single parameter, which is an array of strings (String[]) representing the command-line arguments passed to the Java program when it is executed. These arguments can be used to provide input to the program or configure its behavior.

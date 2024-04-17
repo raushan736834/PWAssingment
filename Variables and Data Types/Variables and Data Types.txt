@@ -1,0 +1,42 @@
+1. What are Statically typed and Dynamically typed Programming Language?
+Ans:Statically typed and dynamically typed are two different approaches to type checking in programming languages. Here's an explanation of each:
+
+Statically Typed Programming Language:
+In statically typed languages, variable types are checked at compile time, i.e., before the program is executed.
+Variables are explicitly declared with a specific data type, and the compiler ensures that only values of the correct type can be assigned to those variables.
+Once a variable is assigned a specific type, its type cannot be changed during runtime.
+Examples of statically typed languages include Java, C, C++, and Swift.
+
+Dynamically Typed Programming Language:
+In dynamically typed languages, variable types are checked at runtime, i.e., while the program is executing.
+Variables do not have an explicit type declaration, and their types are determined dynamically based on the value assigned to them.
+The type of a variable can change during the execution of the program, allowing for more flexibility but potentially leading to runtime errors if incompatible types are used.
+Examples of dynamically typed languages include Python, JavaScript, Ruby, and PHP.
+
+
+2.What is the variable in java?
+Ans:In Java, a variable is a named storage location that holds a value. Variables are used to store data that can be manipulated and referenced within a Java program. Each variable has a specific data type that defines the kind of data it can hold, such as integers, floating-point numbers, characters, boolean values, objects, or references to objects.
+
+
+3. What are the primitive Data types in java?
+Ans:In Java, primitive data types are the most basic data types that represent simple values. They are built into the Java language and are not objects. Java defines eight primitive data types, which can be categorized into four groups:
+
+Integer Types:
+byte: 8-bit signed integer. Range: -128 to 127.
+short: 16-bit signed integer. Range: -32,768 to 32,767.
+int: 32-bit signed integer. Range: -2^31 to 2^31 - 1.
+long: 64-bit signed integer. Range: -2^63 to 2^63 - 1.
+
+Floating-Point Types:
+float: 32-bit floating-point number. Range: Approximately ±3.40282347E+38F (6-7 significant decimal digits).
+double: 64-bit floating-point number. Range: Approximately ±1.79769313486231570E+308 (15 significant decimal digits).
+
+Character Type:
+char: 16-bit Unicode character. Represents a single character from the Unicode character set.
+
+Boolean Type:
+boolean: Represents a boolean value, which can be either true or false.
+
+4. What are the identifiers in java?
+Ans:In Java, identifiers are names given to various program elements, such as classes, variables, methods, packages, and interfaces. Identifiers serve as labels that uniquely identify these program elements within the scope of a Java program.
+

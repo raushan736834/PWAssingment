@@ -1,0 +1,53 @@
+1. What are the Conditional Operators in Java?
+Ans:In Java, conditional operators are used to make decisions based on conditions and control the flow of execution in a program. There are several conditional operators available in Java, including:
+
+if Statement: The if statement is used to execute a block of code if a specified condition is true. It can be followed by an optional else statement, which executes a block of code if the condition is false.
+
+else-if Statement: The else-if statement allows you to check multiple conditions sequentially. It follows an if statement and is followed by either another else-if statement or an else statement.
+
+Switch Statement: The switch statement is used to select one of several code blocks to be executed, based on the value of a variable. It provides an alternative to using multiple if-else statements.
+
+2.What is the uses of Switch case in  Java Programming?
+Ans:Here are some common uses of the switch statement in Java programming:
+
+Menu Selection: The switch statement is often used to implement menu-based user interfaces where users can choose from multiple options. Each option corresponds to a case in the switch statement, and the corresponding code block is executed based on the user's selection.
+
+State Machine: In state-based systems or finite state machines, the switch statement can be used to transition between different states based on certain conditions or events. Each state corresponds to a case in the switch statement, and the appropriate actions are performed for each state transition.
+
+Enum Switching: When working with enumerated types (enum), the switch statement is commonly used to switch on enum constants and perform different actions based on the enum value.
+
+Character/String Matching: The switch statement can also be used to match characters or strings and perform different actions based on the matched value. This is often used in lexical analysis and text processing applications.
+
+3. What is the Syntax of if else Statement?
+Ans:
+The syntax of the if-else statement in Java is as follows:
+
+if (condition) {
+    // Code block to be executed if the condition is true
+} else {
+    // Code block to be executed if the condition is false
+}
+
+4.What are the 3 types of iterative statements in java?
+Ans:In Java, there are three types of iterative statements, also known as loop statements, which allow you to execute a block of code repeatedly until a certain condition is met. These three types are:
+
+for Loop:
+The for loop is used to iterate over a range of values or a collection of elements for a fixed number of times.
+It consists of three parts: initialization, condition, and iteration expression, separated by semicolons (;).
+The initialization part is executed only once at the beginning of the loop. The condition is evaluated before each iteration, and if it evaluates to true, the loop body is executed. After each iteration, the iteration expression is evaluated.
+
+while Loop:
+The while loop is used to execute a block of code repeatedly as long as a specified condition is true.
+It consists of a single condition, which is evaluated before each iteration. If the condition evaluates to true, the loop body is executed. If the condition evaluates to false, the loop terminates.
+
+do-while Loop:
+The do-while loop is similar to the while loop, but the condition is evaluated after each iteration. This means that the loop body is executed at least once, even if the condition is initially false.
+
+5.Write a program to print numbers from 1 to 100.
+Ans:public class Print{
+	public static void main(String[] args){
+		for(int i=1;i<11;i++)
+			System.out.println(i); 
+    	}
+     }
+	
