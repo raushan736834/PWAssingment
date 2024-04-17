@@ -1,0 +1,46 @@
+1.What is encapsulation in java? Why is it called data hiding?
+Ans:Encapsulation in Java is the mechanism of bundling the data (attributes) and methods (behaviors) that operate on the data into a single unit called a class. It is one of the four fundamental Object-Oriented Programming (OOP) concepts, along with inheritance, polymorphism, and abstraction.
+
+2.What are the important features of Encapsulation?
+Ans:
+Encapsulation in Java provides several important features that contribute to the robustness, security, and maintainability of object-oriented code:
+
+Data Hiding:
+Encapsulation hides the internal state (data) of an object from the outside world by declaring data members (fields) as private. This prevents direct access to the object's data from outside the class and ensures that the data is accessed and modified only through well-defined methods (getters and setters).
+
+Access Control:
+Encapsulation allows for fine-grained control over the accessibility of class members (fields and methods). By using access modifiers such as private, protected, and public, encapsulation enables the definition of access levels for class members, restricting access to certain parts of the class as needed.
+
+Data Integrity:
+Encapsulation promotes data integrity by enforcing validation rules and business logic within setter methods. By encapsulating data modification within setter methods, encapsulation allows for validation checks to be performed before allowing changes to the object's state, ensuring that the data remains 
+consistent and valid.
+
+Flexibility and Maintainability:
+Encapsulation promotes code flexibility and maintainability by decoupling the internal implementation details of a class from its external interface. By encapsulating the implementation details within the class and exposing only the necessary interfaces (methods), encapsulation allows for easier modification and evolution of the class without affecting its clients.
+
+Security:
+Encapsulation enhances security by preventing unauthorized access to sensitive data and functionality. By encapsulating data members as private and providing controlled access through methods, encapsulation helps protect the integrity and confidentiality of data and prevents unintended modifications or misuse of class members.
+
+Code Reusability:
+Encapsulation promotes code reusability by encapsulating common behaviors and functionalities within reusable class components. By encapsulating related data and methods within a class, encapsulation facilitates the creation of modular, self-contained components that can be easily reused in different parts of the codebase.
+
+3.what are getter and setter methods in java?
+Ans: In Java, getters and setters are methods used to access and modify the private fields (data members) of a class, respectively. They are also known as accessor and mutator methods. Getters are used to retrieve the values of private fields, while setters are used to modify or update the values of private fields. Getters and setters provide controlled access to the encapsulated data, allowing for data hiding and abstraction.
+
+4.How to achieve encapsulation in java?
+Ans:Encapsulation in Java is achieved by combining data (fields) and methods (behaviors) into a single unit called a class and controlling access to the data through methods. Here's how to achieve encapsulation:
+
+Declare Data Members as Private:
+Encapsulation starts by declaring the data members (fields) of a class as private. This prevents direct access to the data from outside the class and ensures that the data is accessed and modified only through well-defined methods.
+
+Provide Getter and Setter Methods:
+To allow controlled access to the private data members, provide getter and setter methods in the class. Getter methods are used to retrieve the values of private fields, while setter methods are used to modify or update the values of private fields.
+Getter methods should have the prefix "get" followed by the name of the field they are accessing, and they should return the value of the field.
+Setter methods should have the prefix "set" followed by the name of the field they are modifying, and they should take a parameter representing the new value to be assigned to the field.
+
+Implement Business Logic in Methods:
+Encapsulation allows you to encapsulate business logic and validation rules within the getter and setter methods. You can perform validation checks, access restrictions, or other behaviors within these methods to ensure the integrity and consistency of the data.
+
+Control Access Levels:
+Use access modifiers such as private, protected, and public to control the visibility and accessibility of class members (fields and methods).
+Data members should be declared as private to hide them from external classes and code modules. Getter and setter methods can be declared as public or protected to provide controlled access to the encapsulated data.

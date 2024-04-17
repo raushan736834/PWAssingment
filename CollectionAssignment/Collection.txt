@@ -1,0 +1,148 @@
+1. What is the Collection framework in Java?
+Ans: Collection Framework is a combination of classes and interface, which is used to store and manipulate the
+data in the form of objects. It provides various classes such as ArrayList, Vector, Stack, and HashSet, etc. and
+interfaces such as List, Queue, Set, etc. for this purpose.
+
+2. What is the difference between ArrayList and LinkedList?
+
+ArrayList and LinkedList are both implementations of the List interface in Java, but they have different underlying data structures and performance characteristics.
+
+    1. **ArrayList**:
+   	- Uses a dynamic array to store elements internally.
+   	- Provides fast random access to elements because it uses indexing.
+   	- Insertions and deletions at the end of the list are generally fast (amortized constant time), but insertions and deletions in the middle of the list are slower because elements may need to be shifted.
+   	- It's more memory-efficient than LinkedList when considering only the elements, but it might waste some space due to unused slots in the underlying array.
+   	- Suitable for scenarios where you frequently access elements by their index and you perform more reads than writes.
+
+    2. **LinkedList**:
+   	- Uses a doubly linked list to store elements internally.
+   	- Provides fast insertions and deletions at any position in the list (constant time), as it only requires adjusting the links between nodes.
+   	- Random access is slower compared to ArrayList because it needs to traverse the list from the beginning or end to reach a specific element (linear time complexity).
+   	- It consumes more memory than ArrayList because each element in the list requires additional memory for the links.
+   	- Suitable for scenarios where you frequently perform insertions and deletions in the middle of the list and you don't require frequent random access to elements.
+
+3. What is the difference between Iterator and ListIterator?
+
+An iterator and a list iterator are both used to traverse through elements in a collection, but they have some differences in functionality and the types of collections they can iterate over.
+
+1. **Basic Iterator**:
+   - An iterator is a universal interface provided by the `Iterator` interface in Java.
+   - It allows sequential access to elements in a collection, one at a time.
+   - It can be used with any collection that implements the `Iterable` interface, such as lists, sets, and maps.
+   - It only allows forward traversal of the collection.
+
+2. **ListIterator**:
+   - A list iterator is a type of iterator specific to lists and is provided by the `ListIterator` interface in Java.
+   - In addition to the functionalities of a basic iterator, it provides bidirectional traversal of a list, meaning it can traverse in both forward and backward directions.
+   - It also provides methods for adding, removing, and modifying elements during iteration, whereas a basic iterator only allows for removing elements using its `remove()` method.
+   - It can only be used with lists, as it's part of the `ListIterator` interface, which extends the `Iterator` interface.
+
+Here's a summary of the key differences:
+
+1. **Traversal Direction**:
+   - Iterator: Forward only.
+   - ListIterator: Both forward and backward.
+
+2. **Supported Operations**:
+   - Iterator: Limited to iterating and removing elements.
+   - ListIterator: Supports adding, removing, and modifying elements, in addition to iteration.
+
+3. **Collections Supported**:
+   - Iterator: Works with any collection that implements `Iterable`.
+   - ListIterator: Specific to lists, as it's part of the `ListIterator` interface.
+
+In essence, while both iterators serve the purpose of iterating over collections, a list iterator provides additional functionalities specific to lists, such as bidirectional traversal and the ability to modify the list during iteration.
+
+4. What is difference between Iterator and Enumrator?
+
+Iterators and Enumerators are both interfaces in Java used for iterating over collections, but they have some differences in terms of functionality and the collections they can work with.
+
+1. **Functionality**:
+   - Iterator: Supports both read and remove operations.
+   - Enumerator: Supports only read operations.
+
+2. **Supported Collections**:
+   - Iterator: Works with any collection that implements the Iterable interface.
+   - Enumerator: Typically used with legacy collections like Hashtable and Vector.
+
+3. **Modification during Iteration**:
+   - Iterator: Some implementations support modification of the underlying collection while iterating.
+   - Enumerator: Does not support modification of the underlying collection while iterating.
+
+In modern Java programming, Iterator is generally preferred due to its richer functionality and compatibility with newer collection types. Enumerator is mainly used in legacy codebases where legacy collections are still in use.
+
+5. What is difference between List and Set?
+
+In Java, `List` and `Set` are both interfaces that represent collections of objects, but they have different characteristics and usage scenarios:
+
+1. **Ordering**:
+   - List: Maintains the order of insertion.
+   - Set: Does not maintain any specific order.
+
+2. **Duplicates**:
+   - List: Allows duplicate elements.
+   - Set: Does not allow duplicate elements.
+
+3. **Indexing**:
+   - List: Supports indexed access to elements.
+   - Set: Does not support indexed access.
+
+4. **Primary Implementations**:
+   - List: ArrayList, LinkedList, Vector.
+   - Set: HashSet, TreeSet, LinkedHashSet.
+
+Usage scenarios:
+- Use a List when you need an ordered collection that allows duplicates and indexed access to elements.
+- Use a Set when you need a collection with unique elements and order is not important, or when you need to quickly check for the presence of an element without considering its order or frequency.
+
+5. What is difference between HashSet and TreeSet?
+
+`HashSet` and `TreeSet` are both implementations of the `Set` interface in Java, but they have some key differences in terms of their characteristics and performance:
+
+1. **Underlying Data Structure**:
+   - `HashSet`: It uses a hash table for storing elements. This allows for constant-time performance for basic operations like add, remove, and contains (assuming a good hash function and properly distributed elements).
+   - `TreeSet`: It uses a Red-Black tree for storing elements. This data structure maintains the elements in sorted order based on their natural ordering or a custom comparator provided at the time of creation. As a result, the performance of operations like add, remove, and contains is O(log n) for balanced trees.
+
+2. **Ordering**:
+   - `HashSet`: Does not maintain any specific order of elements. The order in which elements are stored may change over time, and it does not provide any guarantees about the order.
+   - `TreeSet`: Maintains the elements in sorted order either based on their natural ordering (if elements are Comparable) or the ordering specified by a custom comparator. Elements are stored in ascending order.
+
+3. **Performance**:
+   - `HashSet`: Provides constant-time performance (O(1)) for basic operations like add, remove, and contains on average, assuming a good hash function and properly distributed elements.
+   - `TreeSet`: Provides O(log n) time complexity for basic operations due to the underlying balanced tree structure. This makes TreeSet slower than HashSet for large collections, but it guarantees a sorted order of elements.
+
+4. **Duplicates**:
+   - Both `HashSet` and `TreeSet` do not allow duplicate elements. If you attempt to add a duplicate element, it will not be added to the set.
+
+5. **Iterating through Elements**:
+   - `HashSet`: The order of iteration is not guaranteed and may change over time as elements are added or removed.
+   - `TreeSet`: Elements are iterated in sorted order, according to the natural ordering or custom comparator.
+
+5. What is difference between Array and ArrayList?
+
+`Array` and `ArrayList` are both used for storing collections of elements in Java, but they have some fundamental differences:
+
+1. **Fixed Size vs. Dynamic Size**:
+   - `Array`: Arrays have fixed sizes once they are created. The length of an array is specified at the time of creation and cannot be changed later.
+   - `ArrayList`: ArrayLists are dynamic in size. They automatically resize themselves when elements are added or removed. They can grow or shrink as needed.
+
+2. **Primitives vs. Objects**:
+   - `Array`: Arrays can store both primitive data types (like int, float, char, etc.) and object references. Once created, the type of elements stored in an array cannot be changed.
+   - `ArrayList`: ArrayLists can only store object references. They cannot store primitive data types directly; instead, you need to use their corresponding wrapper classes (e.g., Integer for int, Float for float, etc.).
+
+3. **Direct Access vs. Indirect Access**:
+   - `Array`: Elements of an array can be directly accessed using their index. This makes accessing elements in arrays fast and efficient.
+   - `ArrayList`: Elements of an ArrayList can also be accessed using their index, but internally, ArrayLists use an array to store elements. So, while the ArrayList provides an interface for dynamic resizing and other operations, accessing elements may involve a slight overhead compared to arrays.
+
+4. **Length vs. Size**:
+   - `Array`: The length of an array is fixed and accessed using the `length` attribute.
+   - `ArrayList`: The size of an ArrayList can change dynamically, and it is accessed using the `size()` method.
+
+5. **Performance**:
+   - `Array`: Arrays generally offer better performance for direct element access since they do not have the overhead of maintaining additional methods and resizing operations.
+   - `ArrayList`: ArrayLists provide convenience methods for dynamic resizing and other operations but may have slightly slower access times compared to arrays due to the additional overhead.
+
+6. **Flexibility**:
+   - `Array`: Arrays are less flexible in terms of size changes and require manual resizing or creating a new array if the size needs to be changed.
+   - `ArrayList`: ArrayLists are more flexible and convenient for dynamically changing collections since they handle resizing automatically.
+
